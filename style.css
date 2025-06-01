@@ -1,4 +1,4 @@
-/* إعداد الخلفية */
+/* إعداد عام */
 body {
   margin: 0;
   padding: 0;
@@ -7,112 +7,90 @@ body {
   background-size: cover;
   height: 100vh;
   color: white;
-  text-align: center;
 }
 
-/* تراكب شفاف لتوضيح النص */
+/* تراكب معتم */
 .overlay {
   background-color: rgba(0, 0, 0, 0.65);
   height: 100%;
-  padding: 40px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* الحاوية الرئيسية */
+.container {
+  max-width: 600px;
+  padding: 20px;
 }
 
 /* الشعار */
 .logo {
-  width: 120px;
+  width: 130px;
   height: auto;
-  margin-bottom: 15px;
-  border-radius: 10px;
+  margin-bottom: 20px;
+  border-radius: 15px;
   box-shadow: 0 0 10px #fff;
 }
 
 /* العنوان */
 h1 {
-  font-size: 2.8em;
-  margin: 0;
+  font-size: 2.5em;
+  margin: 10px 0;
 }
 
-p {
+.subtitle {
   font-size: 1.2em;
-  margin-top: 10px;
   color: #ddd;
-}
-
-/* الروابط */
-.social {
-  margin: 25px 0;
-}
-
-.social a {
-  text-decoration: none;
-  margin: 0 10px;
-  color: #00d9ff;
-  font-weight: bold;
-  font-size: 1.1em;
-  transition: color 0.3s ease;
-}
-
-.social a:hover {
-  color: #fff;
+  margin-bottom: 30px;
 }
 
 /* زر الانضمام */
 .join-button {
   display: inline-block;
-  padding: 15px 30px;
-  font-size: 1.2em;
+  padding: 14px 28px;
+  font-size: 1.1em;
   background-color: #28a745;
   color: white;
   border: none;
   border-radius: 30px;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  margin-top: 30px;
+  margin-bottom: 25px;
 }
 
 .join-button:hover {
   background-color: #218838;
 }
-.join-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 400px;
-  margin: 30px auto;
-}
 
-.join-form input,
-.join-form textarea {
-  padding: 12px;
-  font-size: 1em;
-  border: none;
-  border-radius: 10px;
-  outline: none;
-}
-
-.join-form button {
-  padding: 12px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.join-form button:hover {
-  background-color: #0056b3;
-}
-
-.back-link {
-  display: inline-block;
-  margin-top: 20px;
+/* الروابط الاجتماعية */
+.social a {
   text-decoration: none;
-  color: #ccc;
-  font-size: 0.9em;
+  margin: 0 12px;
+  color: #00d9ff;
+  font-weight: bold;
+  font-size: 1em;
+  transition: color 0.3s ease;
 }
 
-.back-link:hover {
-  color: white;
+.social a:hover {
+  color: #ffffff;
+}
+
+/* استجابة الهاتف */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .join-button {
+    padding: 12px 20px;
+    font-size: 1em;
+  }
+
+  .logo {
+    width: 100px;
+  }
 }
