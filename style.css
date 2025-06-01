@@ -1,48 +1,65 @@
-/* الأساس العام للصفحة */
 body {
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Tahoma', sans-serif;
-  background-color: #f7f7f7;
-  color: #222;
   direction: rtl;
+  background-color: #f0f4f8;
+  color: #333;
 }
 
-/* العنوان الرئيسي */
+/* Header with logo and background */
 header {
-  background-color: #004b87;
-  color: white;
-  padding: 20px;
+  background: linear-gradient(to bottom, #007a33 0%, #ffffff 50%, #000000 100%);
   text-align: center;
+  padding: 20px;
+  border-bottom: 4px solid #b00;
 }
 
-/* النص داخل الصفحة */
+.logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #b00;
+}
+
+/* Main Sections */
 main {
   padding: 20px;
-  max-width: 800px;
-  margin: auto;
 }
 
-/* أزرار عامة */
-button {
-  background-color: #004b87;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 15px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #003765;
-}
-
-/* تذييل */
-footer {
-  background-color: #eee;
-  text-align: center;
+section {
+  margin-bottom: 30px;
+  background-color: #fff;
   padding: 15px;
-  margin-top: 40px;
-  font-size: 0.9em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #007a33;
+  margin-bottom: 10px;
+}
+
+/* Contact list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 15px 10px;
+  font-size: 14px;
 }
