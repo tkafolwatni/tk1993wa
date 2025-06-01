@@ -1,65 +1,82 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Cairo', sans-serif;
+  background-color: #f4f6f8;
   margin: 0;
   padding: 0;
   direction: rtl;
-  background-color: #f0f4f8;
-  color: #333;
 }
 
-/* Header with logo and background */
 header {
-  background: linear-gradient(to bottom, #007a33 0%, #ffffff 50%, #000000 100%);
+  background-color: #064420;
+  color: white;
+  padding: 1.5rem;
   text-align: center;
-  padding: 20px;
-  border-bottom: 4px solid #b00;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.logo {
-  max-width: 150px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-header h1 {
+h1 {
   margin: 0;
-  font-size: 28px;
-  color: #b00;
+  font-size: 2rem;
 }
 
-/* Main Sections */
 main {
-  padding: 20px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-section {
-  margin-bottom: 30px;
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
-h2 {
-  color: #007a33;
-  margin-bottom: 10px;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-/* Contact list */
-ul {
+.card h2 {
+  color: #0b8a30;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  padding-right: 1.2rem;
   list-style: none;
-  padding: 0;
 }
 
-ul li {
-  padding: 5px 0;
+.card li {
+  margin-bottom: 0.5rem;
 }
 
-/* Footer */
+a {
+  color: #0b8a30;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 footer {
+  background-color: #1a1a1a;
+  color: white;
   text-align: center;
-  background-color: #222;
-  color: #fff;
-  padding: 15px 10px;
-  font-size: 14px;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
 }
