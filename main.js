@@ -1,0 +1,1 @@
+document.getElementById('app').innerHTML += '<p>الموقع يعمل بنجاح باستخدام Vite</p>';
