@@ -1,10 +1,50 @@
-/* نموذج الانضمام */
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  background: url('msgId1748633931184.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  width: 100px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
 .join-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 400px;
-  margin: 30px auto;
 }
 
 .join-form input,
@@ -16,33 +56,31 @@
   outline: none;
 }
 
-.join-form textarea {
+textarea {
   resize: vertical;
   min-height: 80px;
 }
 
 .join-form button {
   padding: 12px;
-  background-color: #007bff;
+  background-color: #28a745;
   color: white;
   border: none;
   border-radius: 25px;
   font-size: 1em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .join-form button:hover {
-  background-color: #0056b3;
+  background-color: #218838;
 }
 
-/* رابط الرجوع */
 .back-link {
+  margin-top: 15px;
   display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
   color: #ccc;
-  font-size: 0.9em;
+  text-decoration: none;
 }
 
 .back-link:hover {
