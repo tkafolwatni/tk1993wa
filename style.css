@@ -7,7 +7,7 @@ body {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
   min-height: 100vh;
   padding: 40px 20px;
   display: flex;
@@ -15,11 +15,11 @@ body {
   align-items: center;
 }
 
-.form-container {
+.content, .form-container {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 30px;
   border-radius: 15px;
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
   text-align: center;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
@@ -28,17 +28,49 @@ body {
 .logo {
   width: 100px;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #fff;
 }
 
 h1 {
+  font-size: 2em;
   margin-bottom: 10px;
-  font-size: 1.8em;
 }
 
 p {
-  margin-bottom: 20px;
   color: #ccc;
+  margin-bottom: 20px;
+}
+
+.join-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #218838;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  color: #00d9ff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social a:hover {
+  color: white;
 }
 
 .join-form {
@@ -49,36 +81,30 @@ p {
 
 .join-form input,
 .join-form textarea {
-  padding: 12px;
-  font-size: 1em;
+  padding: 10px;
+  border-radius: 8px;
   border: none;
-  border-radius: 10px;
   outline: none;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 80px;
+  font-size: 1em;
 }
 
 .join-form button {
-  padding: 12px;
-  background-color: #28a745;
+  background-color: #007bff;
   color: white;
+  padding: 12px;
   border: none;
   border-radius: 25px;
   font-size: 1em;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .join-form button:hover {
-  background-color: #218838;
+  background-color: #0056b3;
 }
 
 .back-link {
-  margin-top: 15px;
-  display: inline-block;
+  display: block;
+  margin-top: 20px;
   color: #ccc;
   text-decoration: none;
 }
